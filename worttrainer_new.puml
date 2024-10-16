@@ -51,7 +51,7 @@ class Main {
 }
 
 Speichern <|.. GsonSpeichern
-WortTrainer "1" *-- "0..*" WortEintrag
+WortTrainer "1" o-- "0..*" WortEintrag
 Main --> WortTrainer
 Main --> GUI
 GsonSpeichern --> WortTrainer
