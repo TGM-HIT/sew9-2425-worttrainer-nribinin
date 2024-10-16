@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Testfälle für die Benutzeroberfläche
  * @author Nathaniel Ribinin
- * @version 2024-09-22
+ * @version 2024-10-16
  */
 public class GuiTest {
 
