@@ -1,0 +1,59 @@
+@startuml
+
+interface Speichern {
+    +save(WortTrainer trainer)
+    +load(): WortTrainer
+}
+
+class GsonSpeichern {
+    -Gson gson
+    -static final String DATEI_PFAD
+    +save(WortTrainer trainer)
+    +load(): WortTrainer
+}
+
+class WortEintrag {
+    -String wort
+    -String url
+    +getWort(): String
+    +getUrl(): String
+}
+
+class WortTrainer {
+    -List<WortEintrag> wortListe
+    -WortEintrag wortEintrag
+    -int zaehlen
+    -int istRichtig
+    -int istFalsch
+    +setZaehlen(int zaehlen)
+    +getZaehlen(): int
+    +setIstRichtig(int istRichtig)
+    +getIstRichtig(): int
+    +getIstFalsch(): int
+    +getRandomWortEintrag()
+    +getWortListe(): List<WortEintrag>
+    +rateWort(String wort): boolean
+    +getWortEintrag(): WortEintrag
+    +getAktuellerStand(): String
+}
+
+class GUI {
+    -JFrame frame
+    -JButton button
+    -JTextField textField
+    -JLabel label
+    +initComponents()
+    +show()
+}
+
+class Main {
+    +main(String[] args)
+}
+
+Speichern <|.. GsonSpeichern
+WortTrainer "1" *-- "0..*" WortEintrag
+Main --> WortTrainer
+Main --> GUI
+GsonSpeichern --> WortTrainer
+
+@enduml
