@@ -13,7 +13,7 @@ public class WortTrainer {
 	private int istRichtig;
 	private int istFalsch;
 
-	public void Worttrainer(List<WortEintrag> wortListe) {
+	public WortTrainer() {
 		this.wortListe = new ArrayList<>();
 		wortListe.add(new WortEintrag("Superman", "https://static.wikia.nocookie.net/marvel_dc/images/a/a5/Superman_Vol_5_1_Textless.jpg/revision/latest/scale-to-width/360?cb=20180711061148"));
 		wortListe.add(new WortEintrag("The Flash", "https://static.wikia.nocookie.net/the-flash/images/d/d0/FLASH-promo.jpg/revision/latest?cb=20150704154524&path-prefix=de"));
