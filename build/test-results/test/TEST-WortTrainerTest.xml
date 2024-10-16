@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WortTrainerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-10-16T14:38:12" hostname="DESKTOP-VI2692D" time="0.03">
+  <properties/>
+  <testcase name="Es wird geprüft ob die Statistik bei verschiedenen Eingaben passt" classname="WortTrainerTest" time="0.017"/>
+  <testcase name="Es wird geprüft ob auch wirklich ein Paar ausgewählt wird" classname="WortTrainerTest" time="0.002"/>
+  <testcase name="Es wird geprüft ob die Statistik bei richtiger Eingabe passt" classname="WortTrainerTest" time="0.002"/>
+  <testcase name="Es wird geprüft ob die Statistik bei falscher Eingabe passt" classname="WortTrainerTest" time="0.002"/>
+  <testcase name="Es wird geprüft ob eine passende Exception geworfen wird, sollte die Liste doch mal leer sein" classname="WortTrainerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
