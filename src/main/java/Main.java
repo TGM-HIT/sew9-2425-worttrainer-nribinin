@@ -1,4 +1,3 @@
-package nribinin;
 /**
  * Klasse zum starten des Worttrainers
  * @author Nathaniel Ribinin

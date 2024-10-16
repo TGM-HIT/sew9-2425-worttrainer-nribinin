@@ -1,9 +1,6 @@
-package nribinin;
-
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
-
 /**
  * Benutzeroberfläche zum Verwenden des Worttrainers
  * @autor Nathaniel Ribinin

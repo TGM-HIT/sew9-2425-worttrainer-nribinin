@@ -1,5 +1,3 @@
-package nribinin;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -9,8 +7,6 @@ public class WortTrainer {
 	private List<WortEintrag> wortListe;
 
 	private WortEintrag wortEintrag;
-
-	private WortEintrag eintrag;
 
 	private int zaehlen;
 

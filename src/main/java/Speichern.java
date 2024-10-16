@@ -1,5 +1,3 @@
-package nribinin;
-
 /**
  * Speicherstrategie-Interface für das Speichern und Laden von WortTrainer
  * @author Nathaniel Ribinin

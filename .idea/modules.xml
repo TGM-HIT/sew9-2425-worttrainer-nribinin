@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sew9-2425-worttrainer-nribinin.iml" filepath="$PROJECT_DIR$/.idea/sew9-2425-worttrainer-nribinin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sew9-2425-worttrainer-nribinin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sew9-2425-worttrainer-nribinin.main.iml" />
     </modules>
   </component>
 </project>

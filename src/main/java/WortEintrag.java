@@ -1,5 +1,3 @@
-package nribinin;
-
 import java.net.URL;
 import java.net.MalformedURLException;
 
