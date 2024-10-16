@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Test für den Rechtschreibtrainer
  * @author Nathaniel Ribinin
- * @version 2024-09-20
+ * @version 2024-10-16
  */
 public class WortTrainerTest {
 

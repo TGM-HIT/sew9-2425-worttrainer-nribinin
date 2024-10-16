@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WortEintragTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-10-16T14:43:17" hostname="DESKTOP-VI2692D" time="0.059">
+  <properties/>
+  <testcase name="Es wird geprüft ob der URL aktualisiert werden kann" classname="WortEintragTest" time="0.03"/>
+  <testcase name="Es wird geprüft ob ein invalider URL passend geprüft wird" classname="WortEintragTest" time="0.003"/>
+  <testcase name="Es wird geprüft ob eine IllegalArgumentException Exception bei invalidem URL ausgegeben wird" classname="WortEintragTest" time="0.003"/>
+  <testcase name="Es wird geprüft ob die wirklichen Werte zurückgegeben werden" classname="WortEintragTest" time="0.002"/>
+  <testcase name="Es wird geprüft ob eine Nullpointer Exception bei null Wort ausgegeben wird" classname="WortEintragTest" time="0.003"/>
+  <testcase name="Es wird geprüft ob ein valider URL beim setzten geprüft werden kann" classname="WortEintragTest" time="0.002"/>
+  <testcase name="Es wird geprüft ob das Wort aktualisiert werden kann" classname="WortEintragTest" time="0.001"/>
+  <testcase name="Es wird geprüft ob ein invalider URL beim setzten geprüft werden kann" classname="WortEintragTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

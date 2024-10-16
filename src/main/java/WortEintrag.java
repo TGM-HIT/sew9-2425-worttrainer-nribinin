@@ -16,8 +16,16 @@ public class WortEintrag {
 	}
 
 	public WortEintrag(String wort, String url) {
-		this.setWort(wort);
-		this.setUrl(url);
+		if (wort != null) {
+			this.wort = wort;
+		} else{
+			throw new NullPointerException("Bitte gültiges Wort eingeben!");
+		}
+		if (this.checkUrl(url)){
+			this.url = url;
+		} else{
+			throw new IllegalArgumentException("Bitte gib einen gültigen Link ein!");
+		}
 	}
 
 	/**
