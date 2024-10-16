@@ -10,6 +10,11 @@ public class WortEintrag {
 	private String wort;
 	private String url;
 
+	public WortEintrag(){
+		this.setWort("Batman");
+		this.setUrl("https://images.desenio.com/zoom/wb0125-8batman-portrait50x70-55544-10774.jpg");
+	}
+
 	public WortEintrag(String wort, String url) {
 		this.setWort(wort);
 		this.setUrl(url);
