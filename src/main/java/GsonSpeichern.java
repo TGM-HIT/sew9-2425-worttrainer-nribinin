@@ -1,5 +1,8 @@
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSyntaxException;
+
+
 import java.io.*;
 import javax.swing.*;
 
@@ -49,12 +52,20 @@ class GsonSpeichern implements Speichern {
      */
     @Override
     public WortTrainer load() {
-        try (FileReader reader = new FileReader(DATEI_PFAD)) {
-            return gson.fromJson(reader, WortTrainer.class);  // Liest die JSON-Datei und konvertiert sie in ein WortTrainer-Objekt
+        File file = new File(DATEI_PFAD);
+        if (!file.exists()) {
+            System.out.println("Datei wurde nicht gefunden");
+            return new WortTrainer();
+        }
+
+        try (FileReader reader = new FileReader(file)) {
+            return gson.fromJson(reader, WortTrainer.class);
         } catch (IOException e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Fehler beim Laden der Daten. Eine neue Datei wird erstellt.");  // Zeigt eine Fehlermeldung an, wenn ein Fehler auftritt
-            return new WortTrainer();  // Gibt einen neuen WortTrainer zurück, falls das Laden fehlschlägt
+            System.out.println("Fehler beim Laden der Datei: " + e.getMessage());
+            return new WortTrainer();
+        } catch (JsonSyntaxException e) {
+            System.out.println("Ungültiges JSON-Format: " + e.getMessage());
+            return new WortTrainer();
         }
     }
 }
